@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import type { Table } from '@suwayomi-dmca/lib';
+import type { Table } from 'suwayomi-watcher';
 
 const {localeModule, currentLocale } = useI18n();
 

@@ -1,4 +1,4 @@
-# @suwayomi-dmca/lib
+# suwayomi-watcher
 
 A Node.js & CLI utility for analyzing your **Suwayomi** library and detecting:
 
@@ -25,13 +25,13 @@ Other sources are flagged as **SUSPICIOUS** if they are missing more than 10% of
 ## 📦 Installation
 
 ```cmd
-npm install @suwayomi-dmca/lib
+npm install suwayomi-watcher
 ```
 
 Or with bun:
 
 ```cmd
-bun add @suwayomi-dmca/lib
+bun add suwayomi-watcher
 ```
 
 ---
@@ -41,13 +41,13 @@ bun add @suwayomi-dmca/lib
 Run directly with npx:
 
 ```cmd
-npx @suwayomi-dmca/lib "http://127.0.0.1:4567"
+npx suwayomi-watcher "http://127.0.0.1:4567"
 ```
 
 With authentication:
 
 ```cmd
-npx @suwayomi-dmca/lib "http://username:password@127.0.0.1:4567"
+npx suwayomi-watcher "http://username:password@127.0.0.1:4567"
 ```
 
 This generates:
@@ -114,7 +114,7 @@ export type Table<T extends boolean = false> = {
 
 ### Example
 ```ts
-import { main } from "@suwayomi-dmca/lib";
+import { main } from "suwayomi-watcher";
 
 async function run() {
   const pull = await main({
