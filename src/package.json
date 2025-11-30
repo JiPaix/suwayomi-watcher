@@ -1,0 +1,60 @@
+{
+    "name": "suwayomi-watcher",
+    "version": "1.0.0",
+    "author": "JiPaix",
+    "description": "Identify manga entries in your Suwayomi library that are either missing chapters or have been removed due to takedowns.",
+    "main": "dist/browser/lib.cjs.js",
+    "module": "dist/browser/lib.esm.js",
+    "types": "dist/browser/lib.d.ts",
+    "bin": {
+        "suwayomi-watcher": "dist/node/main.js"
+    },
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/browser/lib.d.ts",
+            "import": "./dist/browser/lib.esm.js",
+            "require": "./dist/browser/lib.cjs.js"
+        },
+        "./cli": {
+            "import": "./dist/node/main.js"
+        }
+    },
+    "files": [
+        "README.md",
+        "LICENSE",
+        "dist/**/*"
+    ],
+    "scripts": {
+        "prepublishOnly": "npm run build && shx cp ../LICENSE ./LICENSE",
+        "build": "node ./build.mjs && tsc && tsc --project ./tsconfig.lib.json"
+    },
+    "dependencies": {
+        "csv": "^6.4.1"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "esbuild": "^0.27.0",
+        "shx": "^0.4.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JiPaix/suwayomi-watcher.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/JiPaix/suwayomi-watcher/issues"
+    },
+    "homepage": "https://github.com/JiPaix/suwayomi-watcher#readme",
+    "keywords": [
+        "suwayomi",
+        "manga",
+        "mangadex",
+        "cli",
+        "library",
+        "takedown",
+        "missing-chapters"
+    ]
+}

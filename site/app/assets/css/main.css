@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: "Roboto", sans-serif;
+  --font-mono: "Permanent Marker", cursive;
+}
+
+:root {
+  --ui-primary: var(--ui-color-primary-500);
+}
+
+html.light {
+  --ui-primary: var(--color-blue-500);
+}

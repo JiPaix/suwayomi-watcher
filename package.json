@@ -1,0 +1,14 @@
+{
+  "name": "suwayomi-dmca",
+  "private": true,
+  "workspaces": [
+    "src",
+    "site"
+  ],
+  "scripts": {
+    "build:lib": "npm run build --workspace src",
+    "build:site": "npm run generate --workspace site",
+    "build": "npm run build:lib && npm run build:site"
+  },
+  "version": ""
+}
