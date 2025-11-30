@@ -1,6 +1,6 @@
 {
     "name": "suwayomi-watcher",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "author": "JiPaix",
     "description": "Identify manga entries in your Suwayomi library that are either missing chapters or have been removed due to takedowns.",
     "main": "dist/browser/lib.cjs.js",
