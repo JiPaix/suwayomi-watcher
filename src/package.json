@@ -56,5 +56,9 @@
         "library",
         "takedown",
         "missing-chapters"
-    ]
+    ],
+    "publishConfig": {
+        "access": "public",
+        "provenance": true
+    }
 }
